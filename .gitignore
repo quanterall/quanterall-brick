@@ -9,5 +9,4 @@ cabal.sandbox.config
 *.swp
 *~
 \#*
-quanterall-brick.cabal
 .devcontainer/build
