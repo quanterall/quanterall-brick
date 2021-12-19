@@ -84,8 +84,9 @@ drawHistogram (FillCharacter fillCharacter) sorting keyValues = do
                 [ hLimit longestNameLength (withAttr histogramLineKeyAttr $ txt name <+> fill ' '),
                   str " ",
                   hLimit fillWidth $ withAttr fillAttr $ fill fillCharacter,
-                  fill ' ',
-                  withAttr histogramLineValueAttr $ str percentageString
+                  str " ",
+                  withAttr histogramLineValueAttr $ str percentageString,
+                  fill ' '
                 ]
 
 unicodeDot :: FillCharacter
